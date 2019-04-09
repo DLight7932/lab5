@@ -50,5 +50,17 @@ namespace struct_lab_student
             scholarship = int.TryParse(data[8], out scholarship) && scholarship > 122  ? scholarship :
                                                                     scholarship > 2346 ? 2345        : 0;
         }
+        public override string ToString()
+        {
+            return $"{surName} " +
+                $"{firstName} " +
+                $"{patronymic} " +
+                $"{sex} " +
+                $"{dateOfBirth} " +
+                $"{mathematicsMark} " +
+                $"{physicsMark} " +
+                $"{informaticsMark} " +
+                $"{scholarship}";
+        }
     }
 }
